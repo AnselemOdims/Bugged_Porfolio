@@ -1,0 +1,401 @@
+
+/* Header Section */
+.limited {
+  margin: 24px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background: var(--neutral-color-1);
+  align-items: center;
+  padding: 24px;
+  z-index: 1;
+}
+
+header .logo a {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--primary-color-1);
+}
+
+header nav .hamburger-mobile-menu {
+  position: fixed;
+  z-index: 1;
+  background-color: var(--primary-color-1);
+  overflow: auto;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 770px;
+  bottom: 0;
+  padding: 62px 16px 50px;
+  mix-blend-mode: multiply;
+  transition: left ease-out 0.6s 0.05s;
+}
+
+header nav .desktop-menu {
+  display: none;
+}
+
+/* Hero Section  & About Section */
+main {
+  background-color: var(--neutral-color-2);
+  transition: filter ease-in 0.15s 0.1s;
+}
+
+div.main-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background: var(--neutral-color-1) url("../images/background_image/header-shapes\ mobile@4x.svg") 0 10px no-repeat;
+  background-size: 100%, 90%;
+  height: 95vh;
+  border-bottom-left-radius: 100px;
+}
+
+section.hero-section {
+  margin-top: 120px;
+}
+
+.hero-section > h1,
+.about-section > h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 52px;
+  color: var(--accent-color-1);
+}
+
+.hero-section > span,
+.about-section > span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--primary-color-1);
+  text-transform: uppercase;
+  margin: 14px 0;
+}
+
+.hero-section > p,
+.about-section > p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--accent-color-2);
+}
+
+.hero-section > ul,
+.about-section > ul {
+  display: flex;
+  margin: 14px 0 0 0;
+  list-style: none;
+  padding: 0;
+  align-items: center;
+}
+
+.hero-section > ul > li,
+.about-section > ul > li {
+  margin-right: 20px;
+}
+
+.about-section > button {
+  width: 162px;
+  height: 48px;
+}
+
+/* Projects Section */
+section.card-container {
+  margin-top: 114px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 88px 0;
+  margin-bottom: 0;
+}
+
+/* About Section */
+.about {
+  margin-top: 114px;
+  background: var(--neutral-color-1);
+  border-top-right-radius: 100px;
+  padding-top: 114px;
+}
+
+.about-section {
+  margin-top: 0;
+}
+
+.about-section h1 {
+  margin: 0;
+}
+
+.about-section p {
+  margin: 12px 0;
+}
+
+.about-section h4 {
+  margin: 0 0 26px;
+}
+
+.about-section > ul {
+  margin-bottom: 22px;
+}
+
+.languages {
+  margin-bottom: 113px;
+}
+
+.languages > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.languages > ul > li {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0 24px 0;
+  cursor: pointer;
+}
+
+.languages > ul > li span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 12px;
+}
+
+.languages > ul > li img {
+  margin-right: 42px;
+}
+
+.languages > ul > li img.clicked {
+  transform: rotate(90deg);
+}
+
+.languages > ul > li.divider {
+  display: block;
+  padding: 0;
+}
+
+.languages > ul > li.divider hr {
+  border: none;
+  border-top: solid 2px #dfe1e6;
+}
+
+.languages > ul > li.dropdown-list {
+  display: block;
+}
+
+.languages > ul > li.dropdown-list img {
+  margin-right: 0;
+}
+
+li.dropdown-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+li.dropdown-list ul li {
+  display: flex;
+  align-items: center;
+  margin: 12px;
+  padding: 9px 0 9.72px 12px;
+  background: var(--neutral-color-6);
+  border-radius: 8px;
+}
+
+li.dropdown-list ul li span {
+  margin-left: 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+}
+
+header nav .hamburger-mobile-menu .close {
+  position: absolute;
+  right: 22px;
+}
+
+header nav .hamburger-mobile-menu .close img {
+  width: 24px;
+}
+
+header nav .hamburger-mobile-menu > ul {
+  list-style: none;
+  margin-top: 46px;
+}
+
+header nav .hamburger-mobile-menu > ul li {
+  margin-bottom: 40px;
+}
+
+header nav .hamburger-mobile-menu > ul > li a {
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 44px;
+  color: var(--neutral-color-1);
+}
+
+/* Footer Section */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: var(--primary-color-1) url("../images/background_image/contact\ form\ shapes-mobile@2x.png") no-repeat;
+  background-size: 46% 90%;
+  background-position: 100% 21px;
+  padding: 103px 24px 17px;
+  border-top-left-radius: 85px;
+}
+
+section.contact-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.contact-heading > h2 {
+  margin: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  color: var(--neutral-color-1);
+}
+
+section.contact-heading > p {
+  margin: 12px 0 54px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--neutral-color-1);
+  text-align: center;
+}
+
+section.contact-form {
+  width: 100%;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+section.contact-form form input {
+  width: 100%;
+  padding: 15px 38px 15px 16px;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+section.contact-form form input[type="text"] {
+  margin-bottom: 20px;
+}
+
+section.contact-form form textarea {
+  width: 100%;
+  height: 170px;
+  padding: 15px 38px 15px 16px;
+  margin: 18px 0 22px;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  background: var(--neutral-color-1);
+}
+
+section.contact-form form textarea::placeholder,
+section.contact-form form input::placeholder {
+  color: #b3bac5;
+  font-family: Poppins, sans-serif;
+}
+
+footer .contact-form form button {
+  width: 140px;
+}
+
+@media (max-width: 360px) {
+  .card-details ul.project-lang > li {
+    padding: 4px 3px;
+    margin-right: 4px;
+    font-size: 12px;
+  }
+
+  div.main-container {
+    background-position: 0 40px;
+    height: 95vh;
+  }
+
+  .hero-section > h1 {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .card-details ul.project-lang > li {
+    padding: 4px 5px;
+    margin-right: 6px;
+    font-size: 8px;
+  }
+
+  .card-details > div.author-lang ul li {
+    font-size: 10px;
+  }
+
+  .card-details > div.author-lang ul li::before {
+    margin: 0 6px;
+    width: 5px;
+    height: 5px;
+  }
+
+  section.hero-section {
+    margin-top: 0;
+  }
+
+  div.main-container {
+    background-position: 0 60px;
+    height: 100vh;
+  }
+
+  .hero-section > h1 {
+    margin: 80px 0 14px;
+  }
+}
+
+section.contact-form form input.error,
+section.contact-form form textarea.error {
+  border: 3px solid #ca0d03;
+}
+
+section.contact-form form input.success,
+section.contact-form form textarea.success {
+  border: 3px solid rgb(3, 240, 3);
+}
+
+small {
+  color: #ca0d03;
+  margin: 10px 0;
+  font-size: 17px;
+  background: var(--neutral-color-7);
+  text-align: start;
+  padding: 0 13px;
+  border-radius: 5px;
+}
