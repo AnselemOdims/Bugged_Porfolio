@@ -1,5 +1,5 @@
 import {
-  clickHandler, hamburger, navList, activeHandler, btns,
+  hamburger, navList, activeHandler, btns,
 } from './utils.js';
 
 import modalHandler from './popup.js';

@@ -14,7 +14,7 @@ const navMenu = document.querySelector('header > nav > .hamburger');
  */
 export const clickHandler = (e) => {
   e.preventDefault();
-  navMenu.insertAdjacentHTML(
+  navMenus.insertAdjacentHTML(
     'beforeend',
     `
     <div class="hamburger-mobile-menu ">
@@ -31,7 +31,7 @@ export const clickHandler = (e) => {
   );
   const menuList = document.querySelector('.hamburger-mobile-menu');
   helperFunc('blur(15px)', menuList, 'none', 0);
-  const closer = document.querySelector('.close');
+  const closer = document.querySelector('.closer');
   closer.addEventListener('click', () => helperFunc('blur(0)', menuList, 'block', '770px'));
   const ulList = Array.from(document.querySelectorAll('.ulList li'));
 

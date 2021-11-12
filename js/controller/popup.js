@@ -8,7 +8,7 @@ import { findItem } from './helpers.js';
  * @description {handles modal popup}
  */
 export default function modalHandler(e) {
-  const card = findItem(e.currentTarget, cardModel); // find the item in the model
+  const card = findItem(currentTarget, cardModel); // find the item in the model
   const {
     imgSrc,
     header,
@@ -70,6 +70,6 @@ export default function modalHandler(e) {
   if (!langList4) {
     modal.querySelector('.optional').style.display = 'none';
   }
-  document.querySelector('body').insertAdjacentElement('afterbegin', modal);
+  document.querySelector('header').insertAdjacentElement('afterbegin', modal);
   modal.querySelector('#closeImg').addEventListener('click', () => modal.remove());
 }

@@ -1,5 +1,5 @@
-export default [
-  {
+export default {
+  0:{
     id: 1,
     header: 'Tonic',
     authorLang: 'CANOPY',
@@ -13,7 +13,7 @@ export default [
     langList2: 'css',
     langList3: 'javascript',
   },
-  {
+  1:{
     id: 2,
     header: 'Multi Post Stories',
     authorLang: 'FACEBOOK',
@@ -28,7 +28,7 @@ export default [
     langList3: 'css',
     langList4: 'javascript',
   },
-  {
+  2:{
     id: 3,
     header: 'Facebook 360',
     authorLang: 'FACEBOOK',
@@ -43,7 +43,7 @@ export default [
     langList3: 'css',
     langList4: 'javascript',
   },
-  {
+  3:{
     id: 4,
     header: 'Uber Navigation',
     authorLang: 'Uber',
@@ -58,4 +58,4 @@ export default [
     langList3: 'css',
     langList4: 'javascript',
   },
-];
+};

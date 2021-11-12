@@ -26,7 +26,7 @@ export const helperFunc = (blur, list, display, left) => {
  * @returns {Object} The object found in the array
  */
 export const findItem = (target, model) => {
-  const { btnId } = target.dataset;
+  const btnId  = target.dataset;
   return model.find((elem) => elem.id === parseInt(btnId, 10));
 };
 
